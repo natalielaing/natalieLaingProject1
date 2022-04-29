@@ -1,0 +1,40 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper{
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+      &.button {
+          color: $primary;
+          background-color: $secondary;
+          padding: 18px 36px;
+          font-size: 0.8rem;
+          font-weight: bold;
+          line-height: 1.2rem;
+          text-align: center;
+          transition: 0.3s;
+          &:hover {
+              background-color: $tertiary;
+              color: $primary;
+          }
+          &:focus {
+              background-color: $tertiary;
+              color: $primary;
+          }
+      }
+  }
+
+  ul {
+      list-style: none;
+  }
+
+
+
