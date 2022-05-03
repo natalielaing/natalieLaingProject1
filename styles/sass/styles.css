@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chathura&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -245,7 +246,7 @@ img {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -276,6 +277,12 @@ ul {
   list-style: none;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 html {
   font-size: 125%;
   font-family: "Chathura";
@@ -285,13 +292,323 @@ html {
   font-family: "Tulpen One";
 }
 
-header {
-  background-image: url("../../assets/home-image-1.jpg");
-  background-size: cover;
+a {
+  color: #FFFFFF;
 }
+
+h3 {
+  font-size: 3.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 2.2px;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 1.9px;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
 header ul {
   display: flex;
+  margin: 0;
+  justify-content: center;
+}
+header ul li {
+  padding: 30px;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 header h2 {
   margin: 0;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.homeHeader {
+  background-image: url("../../assets/home-image-1.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.mainTitle h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FF8327;
+  letter-spacing: 2.4px;
+  font-size: 13rem;
+  font-weight: normal;
+  padding: 0;
+  margin-top: 250px;
+  line-height: 230px;
+  position: absolute;
+  z-index: 2;
+  left: 29%;
+}
+.mainTitle h1 span {
+  font-family: "Tulpen One";
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+  font-size: 4.2rem;
+  line-height: 0px;
+  letter-spacing: 2.6px;
+  margin: 0;
+  display: block;
+  padding-left: 10px;
+}
+
+.imageContainer {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  z-index: 1;
+}
+
+.homeSectionOne {
+  background-color: #111010;
+  min-height: 100vh;
+  padding-top: 200px;
+}
+.homeSectionOne ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.homeSectionOne ul li {
+  width: 50%;
+}
+.homeSectionOne ul li h3 {
+  margin: 0;
+}
+.homeSectionOne ul #home::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f015";
+  font-size: 1.2rem;
+  background-color: #BF2603;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 15px;
+}
+.homeSectionOne ul #people::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c0";
+  font-size: 1.2rem;
+  background-color: #BF2603;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 15px;
+}
+.homeSectionOne ul #blog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f15b";
+  font-size: 1.2rem;
+  background-color: #BF2603;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 15px;
+}
+.homeSectionOne ul #phone::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f095";
+  font-size: 1.2rem;
+  background-color: #BF2603;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 15px;
+}
+.homeSectionOne ul p {
+  padding: 0;
+  margin: 0 0 3rem 3.3rem;
+}
+
+.homeSectionTwo {
+  background-color: #220303;
+  min-height: 100vh;
+  min-width: 100%;
+  padding-bottom: 150px;
+}
+.homeSectionTwo .flexContainer {
+  display: flex;
+}
+.homeSectionTwo .flexContainer h3 {
+  margin: 100px 0 0 0;
+}
+.homeSectionTwo .flexContainer p {
+  margin: 0;
+  line-height: 1.5rem;
+  letter-spacing: 1.9px;
+  text-align: justify;
+}
+.homeSectionTwo .flexContainer a {
+  font-family: "Tulpen One";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin: 30px 0;
+  padding: 10px 25px;
+}
+
+.homeImagesTop1 {
+  position: relative;
+}
+.homeImagesTop1 img {
+  position: absolute;
+  right: 126px;
+  top: -50px;
+  z-index: 2;
+  box-shadow: 20px 20px #FF8327;
+}
+.homeImagesTop1 .homeImageTopContent {
+  margin-top: 80%;
+}
+.homeImagesTop1 h3 {
+  text-align: end;
+}
+.homeImagesTop1 a {
+  position: absolute;
+  right: 120px;
+}
+
+.homeImagesTop2 {
+  position: relative;
+}
+.homeImagesTop2 img {
+  position: absolute;
+  left: 126px;
+  bottom: -150px;
+  z-index: 2;
+  box-shadow: -20px 20px #FF8327;
+}
+.homeImagesTop2 .homeImageTopContent {
+  margin-left: 100px;
+}
+
+.homeImageTopContent {
+  width: 80%;
+}
+
+.homeSectionThree {
+  background-color: #111010;
+  min-height: 50vh;
+  min-width: 100%;
+  padding-bottom: 150px;
+  position: relative;
+}
+.homeSectionThree h3 {
+  padding-top: 150px;
+  text-align: center;
+  margin: 0;
+  color: #FF8327;
+}
+.homeSectionThree p {
+  text-align: center;
+  text-align: justify;
+}
+.homeSectionThree a {
+  font-family: "Tulpen One";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin: 30px 0;
+  padding: 10px 25px;
+  position: absolute;
+  left: 41%;
+}
+
+.backgroundImage {
+  background-image: url("../../assets/banner-image.jpg");
+  min-height: 50vh;
+  background-size: cover;
+}
+
+.homeSectionFour {
+  min-height: 50vh;
+  background-color: #111010;
+  padding-bottom: 100px;
+}
+.homeSectionFour .homeImagesBottom {
+  display: flex;
+}
+.homeSectionFour img {
+  width: 100%;
+  max-width: 220px;
+  height: 100%;
+  max-height: 220px;
+  margin-right: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: -20px 20px #FF8327;
+}
+.homeSectionFour h3 {
+  margin: 100px 0 0 0;
+  color: #FF8327;
+}
+.homeSectionFour p {
+  margin: 0;
+  line-height: 1.5rem;
+  letter-spacing: 1.9px;
+  text-align: justify;
+}
+.homeSectionFour a {
+  font-family: "Tulpen One";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin: 30px 0;
+  padding: 10px 25px;
+}
+
+.homeGallery {
+  min-height: 50vh;
+  background-color: #220303;
+}
+.homeGallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.homeGallery ul li {
+  width: calc(33.3% - 20px);
+  margin: 35px 10px;
+}
+.homeGallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  max-height: 350px;
+}
+
+footer {
+  background-color: #111010;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contactHeader {
+  background-image: url("../../assets/contact-header-1.jpg");
+  background-size: cover;
+  height: 50vh;
+}
+.contactHeader h1 {
+  color: #FFFFFF;
+  font-size: 4.15rem;
 }/*# sourceMappingURL=styles.css.map */

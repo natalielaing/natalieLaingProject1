@@ -9,87 +9,103 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#" class="logo"><h2>Bar-One</h2></a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="homeHeader">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="logo"><h2>Bar-One</h2></a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
 
 
-        <div class="mainTitle">
-            <h1>Bar-One</h1>
-            <p>Place to be</p>
-        </div>
-        
+            <div class="mainTitle">
+                <h1>Bar-One<span>Place to be</span></h1>
+                <div class="imageContainer">
+                    <img src="./assets/header-box.jpg" alt="photo of wine glasses upside down">
+                </div>
+            </div>
+
     </header>
+        
 
     <main>
-        <section>
+        <section class="homeSectionOne">
+            <div class="wrapper">
             <ul>
                 <li>
-                    <a href=#><h3>New Space</h3></a>
+                    <a href=#><h3 id="home">New space</h3></a>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime mollitia perspiciatis ipsa corporis debitis iste cum et itaque, asperiores, doloribus voluptatem perferendis eaque corrupti tempore.</p>
                 </li>
                 <li>
-                    <a href=#><h3>Community</h3></a>
+                    <a href=#><h3 id="people">Community</h3></a>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime mollitia perspiciatis ipsa corporis debitis iste cum et itaque, asperiores, doloribus voluptatem perferendis eaque corrupti tempore.</p>
                 </li>
                 <li>
-                    <a href="./blog.html"><h3>Blog</h3></a>
+                    <a href="./blog.html"><h3 id="blog">Blog</h3></a>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime mollitia perspiciatis ipsa corporis debitis iste cum et itaque, asperiores, doloribus voluptatem perferendis eaque corrupti tempore.</p>
                 </li>
                 <li>
-                    <a href="./contact.html"><h3>Get in Touch</h3></a> 
+                    <a href="./contact.html"><h3 id="phone">Get in Touch</h3></a> 
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime mollitia perspiciatis ipsa corporis debitis iste cum et itaque, asperiores, doloribus voluptatem perferendis eaque corrupti tempore.</p>
                 </li>
             </ul>
-        </section>
-
-        <section>
-            <div class="homeImagesTop">
-                <img src="./assets/left-image.jpg" alt="image of dimly lit modern bar with many overhanging lightbulbs">
-                <div class="homeImageTopContent">
-                    <h3>Plan ahead</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, excepturi natus. Culpa, delectus vel quae dolore quis dolor? Quae, rem aspernatur rerum quia minima error fuga deserunt officiis nihil labore!</p>
-                    <a href="#" class="button">Read More</a>
-                </div>
-            </div>
-            <div class="homeImagesTop">
-                <div class="homeImageTopContent">
-                    <h3>New locations</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, excepturi natus. Culpa, delectus vel quae dolore quis dolor? Quae, rem aspernatur rerum quia minima error fuga deserunt officiis nihil labore!</p>
-                    <a href="#" class="button">Read More</a>
-                </div>
-                <img src="./assets/right-image.jpg" alt="photo of modern bar displaying many barstools">
             </div>
         </section>
 
-        <section>
-            <h3>Want to host a party?</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, accusamus! Cumque accusamus ratione doloremque quaerat veniam obcaecati sint! Sapiente voluptatibus accusantium provident praesentium! Illum cupiditate architecto distinctio sunt, totam ipsam hic recusandae autem veritatis dolores eius eveniet voluptas fugit suscipit animi in tempora voluptatibus cumque.</p>
-            <a href="#" class="button">Find Out More</a>
+        <section class="homeSectionTwo">
+            <div class="wrapper">
+
+                <div class="flexContainer">
+                     <div class="homeImagesTop1">
+                        <img src="./assets/left-image.jpg" alt="image of dimly lit modern bar with many overhanging lightbulbs">
+                        <div class="homeImageTopContent">
+                            <h3>New locations</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, excepturi natus. Culpa, delectus vel quae dolore quis dolor? Quae, rem aspernatur rerum quia minima error fuga deserunt officiis nihil labore!</p>
+                            <a href="#" class="button">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="homeImagesTop2">
+                        <div class="homeImageTopContent">
+                            <h3>Plan ahead</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, excepturi natus. Culpa, delectus vel quae dolore quis dolor? Quae, rem aspernatur rerum quia minima error fuga deserunt officiis nihil labore!</p>
+                            <a href="#" class="button">Read More</a>
+                        </div>
+                        <img src="./assets/right-image.jpg" alt="photo of modern bar displaying many barstools">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="homeSectionThree">
+            <div class="wrapper">
+                <h3>Want to host a party?</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, accusamus! Cumque accusamus ratione doloremque quaerat veniam obcaecati sint! Sapiente voluptatibus accusantium provident praesentium! Illum cupiditate architecto distinctio sunt, totam ipsam hic recusandae autem veritatis dolores eius eveniet voluptas fugit suscipit animi in tempora voluptatibus cumque.</p>
+                <a href="#" class="button">Find Out More</a>
+            </div>
         </section>
 
         <section class="backgroundImage">
             <!-- Section for background image -->
         </section>
 
-        <section>
+        <section class="homeSectionFour">
+            <div class="wrapper">
             <div class="homeImagesBottom">
                 <img src="./assets/small-box-image.jpg" alt="image of person laughing with a drink in their hand">
                 <div class="homeImageBottomContent">
@@ -98,9 +114,11 @@
                     <a href="#" class="button">Find Out More</a>
                 </div>
             </div>
+        </div>
         </section>
 
         <section class="homeGallery">
+            <div class="wrapper">
             <ul>
                 <li>
                     <img src="./assets/gallery-image-1.jpg" alt="image of modern bar showing liquor bottles on wall behind bar">
@@ -112,6 +130,7 @@
                     <img src="./assets/gallery-image-3.jpg" alt="photo of Caesar drink sitting on bar top">
                 </li>
             </ul>
+            </div>
         </section>
 
     </main>

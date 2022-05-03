@@ -7,6 +7,9 @@
 //Chathura font in normal
 @import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap');
 
+//import Font Awesome 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
 html {
     font-size: 125%;
     font-family: "Chathura";
@@ -16,6 +19,24 @@ html {
     font-family: "Tulpen One";
 }
 
+a {
+    color: $primary;
+}
+
+h3 {
+    font-size: 3.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 2.2px;
+    color: $primary;
+}
+
+p {
+    font-size: 1.95rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.9px;
+    color: $primary;
+    font-weight: normal;
+}
 
 
 
