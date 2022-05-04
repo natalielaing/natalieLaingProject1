@@ -606,9 +606,117 @@ footer p {
 .contactHeader {
   background-image: url("../../assets/contact-header-1.jpg");
   background-size: cover;
-  height: 50vh;
+  min-height: 50vh;
+  background-position: bottom;
 }
 .contactHeader h1 {
   color: #FFFFFF;
   font-size: 4.15rem;
+}
+
+.contactSection {
+  background-color: #111010;
+  min-height: 50vh;
+  color: #FFFFFF;
+}
+.contactSection .contactIcons {
+  margin: 0;
+  display: flex;
+  padding: 0;
+  margin-top: 50%;
+}
+.contactSection .contactIcons li {
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.contactFlex {
+  display: flex;
+  position: relative;
+}
+
+.address {
+  font-size: 1.5rem;
+  text-align: left;
+}
+.address :first-child {
+  padding-bottom: 20px;
+}
+.address a {
+  display: block;
+}
+.address address {
+  font-style: normal;
+}
+
+.contactPageForm {
+  background-color: #220303;
+  box-shadow: 20px 20px #FF8327;
+  position: absolute;
+  left: 30%;
+  bottom: -5%;
+}
+.contactPageForm form {
+  display: flex;
+  flex-direction: column;
+  min-width: 60vw;
+}
+.contactPageForm form #name, .contactPageForm form #email, .contactPageForm form #message {
+  border: none;
+  border-bottom: solid 2px #FFFFFF;
+  background-color: #220303;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 20px 10px;
+  margin: 30px;
+}
+.contactPageForm form #name, .contactPageForm form #email {
+  width: calc(50% - 80px);
+}
+.contactPageForm form #message {
+  border: solid 2px #FFFFFF;
+  width: calc(100% - 80px);
+}
+.contactPageForm input::-moz-placeholder, .contactPageForm textarea::-moz-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+.contactPageForm input:-ms-input-placeholder, .contactPageForm textarea:-ms-input-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+.contactPageForm input::placeholder, .contactPageForm textarea::placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+.contactPageForm .submitButton {
+  text-align: center;
+}
+.contactPageForm button {
+  display: inline-block;
+  width: 90%;
+  text-decoration: none;
+  border: none;
+  color: #FFFFFF;
+  background-color: #BF2603;
+  font-family: "Tulpen One";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin: 30px 0;
+  padding: 10px 25px;
+  line-height: 1.2rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.contactPageForm button:hover {
+  background-color: #FF8327;
+  color: #FFFFFF;
+}
+.contactPageForm button:focus {
+  background-color: #FF8327;
+  color: #FFFFFF;
 }/*# sourceMappingURL=styles.css.map */
