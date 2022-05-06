@@ -1,0 +1,12 @@
+//blog header styling 
+
+.blogHeader {
+    background-image: url("../../assets/blog-header-1.jpg");
+    background-size: cover;
+    min-height: 50vh;
+    background-position: bottom;
+    h1 {
+        color: $primary;
+        font-size: 4.15rem;
+    }
+}
