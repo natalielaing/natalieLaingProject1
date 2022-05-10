@@ -435,12 +435,11 @@ header h2 {
 .homeSectionOne {
   background-color: #111010;
   min-height: 100vh;
-  padding-top: 200px;
   padding-bottom: 100px;
 }
 .homeSectionOne ul {
   margin: 0;
-  padding: 0;
+  padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1151,7 +1150,16 @@ footer p {
     margin-top: 0;
   }
 }
+@media (max-width: 810px) {
+  .homeHeader {
+    min-height: 75vh;
+  }
+}
 @media (max-width: 740px) {
+  .homeSectionOne ul {
+    padding: 0;
+  }
+
   .contactFlex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1167,12 +1175,13 @@ footer p {
   }
 
   .mainTitle h1 {
-    font-size: 8rem !important;
+    font-size: 7rem !important;
     margin: 60px !important;
     line-height: 7rem !important;
   }
   .mainTitle h1 span {
     font-size: 2rem !important;
+    padding-left: 55px;
   }
 
   .homeSectionOne li {
