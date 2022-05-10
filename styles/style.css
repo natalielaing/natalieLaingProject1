@@ -387,7 +387,7 @@ header h2 {
 }
 
 .homeHeader {
-  background-image: url("../../assets/home-image-1.jpg");
+  background-image: url("../assets/home-image-1.jpg");
   background-size: cover;
   min-height: 85vh;
 }
@@ -600,7 +600,7 @@ header h2 {
 }
 
 .backgroundImage {
-  background-image: url("../../assets/banner-image.jpg");
+  background-image: url("../assets/banner-image.jpg");
   min-height: 50vh;
   background-size: cover;
 }
@@ -671,7 +671,7 @@ header h2 {
 }
 
 .contactHeader {
-  background-image: url("../../assets/contact-header-1.jpg");
+  background-image: url("../assets/contact-header-1.jpg");
   background-size: cover;
   min-height: 50vh;
   background-position: bottom;
@@ -797,7 +797,7 @@ header h2 {
 }
 
 .blogHeader {
-  background-image: url("../../assets/blog-header-1.jpg");
+  background-image: url("../assets/blog-header-1.jpg");
   background-size: cover;
   min-height: 50vh;
   background-position: bottom;
