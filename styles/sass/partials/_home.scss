@@ -1,31 +1,17 @@
 
-//Header Styling 
-header {
-    ul {
-        display: flex;
-        margin: 0;
-        justify-content: center;
-        li{
-            padding: 30px;
-            font-size: 1.9rem;
-            text-transform: uppercase;
-            height: fit-content;
-        }
-
-    }
-    h2 {
-        margin: 0;
-        color: $primary;
-        font-size: 2.5rem;
-        font-weight: normal;
-        text-transform: capitalize;
-    }
-}   
+//Homepage Header Styling 
 
 .homeHeader {
     background-image: url("../../assets/home-image-1.jpg");
     background-size: cover;
-    height: 100vh;
+    min-height: 85vh;
+    li {
+        &:first-child {
+            a {
+                color: $tertiary;
+            }
+        }
+    }
 }
 
 .mainTitle {
@@ -33,16 +19,16 @@ header {
         width: fit-content;
         color: $tertiary;
         letter-spacing: 2.4px;
-        font-size: 13rem;
+        font-size: 12rem;
         font-weight: normal;
         padding: 0;
-        margin-top: 250px;
+        margin-top: 200px;
         line-height: 230px;
         position: absolute; 
         z-index: 2;
-        left: 29%;
+        left: 35%;
     span {
-        font-family: "Tulpen One";
+        font-family: $baseFont;
         width: fit-content;
         color: $primary;
         font-size: 4.2rem;
@@ -55,10 +41,10 @@ header {
 }
 }
 
-.imageContainer {
+.homeHeaderImageContainer {
     position: absolute; 
     left: 50%;
-    top: 45%;
+    top: 30%;
     z-index: 1;
 }
 
@@ -68,6 +54,7 @@ header {
     background-color: $quaternary;
     min-height: 100vh;
     padding-top: 200px;
+    padding-bottom:100px;
     ul {
         margin: 0;
         padding: 0;
@@ -123,8 +110,6 @@ header {
     min-height: 100vh;
     min-width: 100%;
     padding-bottom: 150px;
-    
-
     .flexContainer {
     display: flex;
     h3 {
@@ -134,7 +119,6 @@ header {
         margin: 0;
         line-height: 1.5rem;
         letter-spacing: 1.9px;
-        text-align:justify;
     }
     a {
         font-family: $iconFont;
@@ -190,8 +174,11 @@ header {
     background-color: $quaternary;
     min-height: 50vh;
     min-width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     position: relative;
+    .wrapper {
+        width: 65%;
+    }
     h3 {
         padding-top: 150px; 
         text-align: center;
@@ -200,17 +187,19 @@ header {
     }
     p {
         text-align: center;
-        text-align:justify;
+        text-align: left;
+        margin: 10px;
     }
-    a {
+    .submitButton {
+        text-align: center;
+        a {
         font-family: $iconFont;
         font-size: 1.5rem;
         letter-spacing: 2px;
         font-weight: normal;
         margin: 30px 0;
         padding: 10px 25px;
-        position: absolute;
-        left: 41%;
+        }
     }
 }
 
@@ -223,23 +212,13 @@ header {
 .homeSectionFour {
     min-height: 50vh;
     background-color: $quaternary;
-    padding-bottom: 100px;
+    padding: 50px 0px;
     .homeImagesBottom {
         display: flex;
     }
-    img {
-        width: 100%;
-        max-width: 220px;
-        height: 100%;
-        max-height: 220px;
-        margin-right: 200px;
-        margin-top: auto;
-        margin-bottom: auto;
-        box-shadow: -20px 20px $tertiary;
-    }
     h3 {
-        margin: 100px 0 0 0;
         color: $tertiary;
+        margin: 70px 0 0 0;
     }
     p {
         margin: 0;
@@ -255,11 +234,22 @@ header {
         margin: 30px 0;
         padding: 10px 25px;
     }
+    .homeSectionFourImage {
+        width: 95%;
+        margin-right: 10%;
+        margin-top: auto;
+        margin-bottom: auto;
+        box-shadow: -20px 20px $tertiary;
+     }
+    .homeImageBottomContent {
+        margin: auto 0;
+    }
 }
 
 .homeGallery {
     min-height: 50vh;
     background-color: $quinary;
+    padding: 50px 0px;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -278,11 +268,3 @@ header {
     }
 }
 
-footer {
-    background-color: $quaternary;
-    p {
-        text-align: center;
-        margin: 0;
-        font-size: 1rem;
-    }
-}

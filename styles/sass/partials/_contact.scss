@@ -3,16 +3,25 @@
     background-size: cover;
     min-height: 50vh;
     background-position: bottom;
+    li {
+        &:nth-child(5) {
+            a {
+                color: $tertiary;
+            }
+        }
+    }
     h1 {
         color: $primary;
         font-size: 4.15rem;
+        letter-spacing: 1.9px;
     }
 }
 
 .contactSection {
     background-color: $quaternary;
-    min-height: 50vh;
+    min-height: 65vh;
     color: $primary;
+    letter-spacing: 1.9px;
     .contactIcons {
         margin: 0;
         display: flex;
@@ -21,6 +30,9 @@
         li {
         color: $primary;
         padding: 10px;
+        &:first-child {
+            padding-left: 0;
+        }
         }
     }
 }
@@ -76,6 +88,7 @@
         font-family: $baseFont;
         font-size: 1.5rem;
         color: $primary;
+        opacity: 1;
     }
     
     .submitButton {

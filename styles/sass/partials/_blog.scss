@@ -5,8 +5,215 @@
     background-size: cover;
     min-height: 50vh;
     background-position: bottom;
+    li {
+        &:nth-child(4) {
+            a {
+                color: $tertiary;
+            }
+        }
+    }
     h1 {
         color: $primary;
         font-size: 4.15rem;
+        letter-spacing: 1.9px;
     }
 }
+
+.blogMainSection {
+    background-color: $quaternary;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.sidebar {
+    background-color: $quinary;
+    height: fit-content;
+    min-width: 25%;
+    margin-top: 100px;
+    margin-right: 100px;
+    padding-top: 30%;
+    position: relative;
+}
+
+.sidebarImage {
+        position: absolute;
+        left: -130px;
+        top: -10px;
+        width: 135%;
+    }
+
+
+.sidebarContent {
+    padding: 20px;
+    h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        font-size: 1.95rem;
+        color: $tertiary;
+        margin-bottom: 40px;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 1.9px;
+        color: $secondary;
+        font-weight: normal;
+        list-style-type: disc;
+        span {
+            color: $primary;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+//blog main section 
+
+.blogContent {
+    position: relative;
+}
+
+.blogContentImage {
+    position: absolute;
+    top: -120px;
+    right: -250px;
+    box-shadow: -20px 20px $tertiary;
+    width: 130%;
+}
+
+.blogMainPost {
+    
+    border-top: solid 8px $tertiary;
+    border-left: solid 8px $tertiary;
+    border-bottom: solid 8px $tertiary;
+    margin-top: 538px; 
+    margin-left: -42px;
+    padding-left: 100px;
+    padding-top: 60px;
+    padding-bottom:60px;
+    h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+    }
+    p {
+        margin-top: 0;
+        span {
+            color: $tertiary;
+        }
+    }
+}
+
+//comment section 
+
+.commentSection {
+    padding-left: 100px;
+}
+
+.commentFlex {
+    display: flex;
+    h4 {
+        color: $tertiary;
+        font-size: 1.95rem;
+        margin: 0;
+        letter-spacing: 2.6px;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.commentImage {
+    width: 100%;
+    max-width: 94px;
+    max-height: 94px;
+}
+
+.commentContent {
+    margin-left: 40px;
+}
+
+#topComment {
+    margin-bottom: 100px;
+}
+
+//form styling 
+
+.commentForm {
+    background-color: $quaternary;
+    form {
+        display: flex;
+        flex-direction: column;
+        min-width:60vw;
+        margin-top: 40px;
+        #commentName, #commentEmail, #comment {
+            border: none;
+            border-bottom: solid 2px $tertiary;
+            background-color: $quaternary;
+            color: $primary;
+            text-align: left;
+            padding: 20px 10px;
+            margin: 20px;
+        }
+        #commentName, #commentEmail {
+            width: calc(50% - 80px);
+            padding-bottom: 60px;
+        }
+        #comment {
+            border: solid 2px $tertiary;
+            width: calc(100% - 80px);
+        }
+    }
+    input::placeholder, textarea::placeholder {
+        font-family: $baseFont;
+        font-size: 1.95rem;
+        color: $primary;
+        opacity: 1;
+    }
+
+    .nameEmail, .commentMessage {
+        text-align: center;
+    }
+    
+    .submitButton {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    
+    button {
+    display: inline-block;
+    width: 90%;
+    text-decoration: none;
+    border: none;
+    color: $primary;
+    background-color: $secondary;
+    font-family: $iconFont;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin: 30px 0;
+    padding: 10px 25px;
+    line-height: 1.2rem;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+        background-color: $tertiary;
+        color: $primary;
+    }
+    &:focus {
+        background-color: $tertiary;
+        color: $primary;
+    }
+    }
+  }
+

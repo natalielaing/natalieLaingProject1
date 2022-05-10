@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <script src="https://kit.fontawesome.com/6e742725df.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/sass/styles.css">
 </head>
 <body>
@@ -19,13 +20,15 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#" class="logo"><h2>Bar-One</h2></a>
+                        <a href="./index.html" class="logo"><h2>Bar-One</h2></a>
                     </li>
                     <li>
                         <a href="#">Blog</a>
                     </li>
                     <li>
                         <a href="./contact.html">Contact</a>
+                    </li>
+                    <li class="fa-solid fa-bars">
                     </li>
                 </ul>
             </nav>
@@ -34,44 +37,56 @@
         </div>
     </header>
 
-        <section class="contactMainSection">
+    <main>
+        <section class="blogMainSection">
             <div class="wrapper">
                 <div class="flexContainer">
                      <aside class="sidebar">
-                        <img src="./assets/sidebar-image.jpg" alt="image of pint of beer being poured from tap">
+                         <div class="sidebarImage">
+                            <img src="./assets/sidebar-image.jpg" alt="image of pint of beer being poured from tap">
+                        </div>
                         <div class="sidebarContent">
                             <h3>Our mission</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima placeat ducimus voluptatem?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima placeat ducimus sit.</p>
                             <a href="#">Find out more.</a>
+                            <h3>Recent Posts</h3>
+                            <ul> 
+                                <li><span>Lorem ipsum dolor sit.</span></li>
+                                <li><span>Amet consectetur adipisicing elit.</span></li>
+                                <li><span>Minima placeat ducimus sit.</span></li>
+                                <li><span>Sit amet consectetur adipisicing.</span></li>
+                            </ul>
                         </div>
                     </aside>
 
                     <div class="blogContent">
-                        <img src="./assets/right-image.jpg" alt="photo of modern bar displaying many barstools">
+                        <div class="blogContentImage">
+                            <img src="./assets/post-image.jpg" alt="photo of nicely plated dishes including a salad and different artisinal toast">
+                        </div>
                         <div class="blogMainPost">
                             <h3>New menu!</h3>
-                            <p>Monday January 30, 2019 by Saron</p>
+                            <p><span>Monday January 30, 2019 by Saron</span></p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vel atque. Tempore repellendus nulla aperiam in odit culpa expedita nemo, nobis ducimus quod, commodi quisquam aut ut fugit labore tenetur explicabo cum quae temporibus. Expedita, vel?</p>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, iusto blanditiis harum nesciunt omnis, sequi, aliquam consequatur ducimus repellat quidem sed ipsum optio id ab vitae? Expedita excepturi, temporibus unde labore aut mollitia illum ex cupiditate laboriosam earum qui ad quia porro ab iusto quaerat facere atque!</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor vero similique aspernatur nesciunt architecto, adipisci asperiores quidem officia voluptatibus commodi, facere labore distinctio non exercitationem reprehenderit ipsa mollitia deserunt placeat ea. Quibusdam quod ad aut eius natus rerum dolore minima, unde maiores voluptatibus non officiis excepturi quisquam iste rem corrupti, distinctio odio velit consequuntur. Illum, blanditiis perspiciatis voluptatibus rem, quibusdam ea autem nostrum a similique aperiam esse quod mollitia ipsa assumenda enim!</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic, molestiae quo quisquam quaerat, aliquid, perspiciatis maiores cum magni veritatis dolorum nemo suscipit.</p>
                         </div>
                         <div class="commentSection">
-                            <h3>Comments</h3>
-                            <div class="topCommentFlex">
-                                <div class="topCommentImageFlex">
+                            <h3>Comments:</h3>
+                            <div class="commentFlex" id="topComment">
+                                <div class="commentImage">
                                     <img src="./assets/comment-image-1.jpg" alt="portrait photo of person looking into the camera">
                                 </div>
-                                <div class="topCommentContentFlex">
+                                <div class="commentContent">
                                     <h4>Tuesday October 9th, 2019 by Sulaire</h4>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odio molestias corrupti architecto sit est, reiciendis neque eveniet obcaecati totam sint sequi id quidem dignissimos blanditiis quia pariatur perspiciatis magnam dicta dolores?</p>
                                 </div>
                             </div>
-                            <div class="bottomCommentFlex">
-                                <div class="bottomCommentImageFlex">
+                            <div class="commentFlex">
+                                <div class="commentImage">
                                     <img src="./assets/comment-image-2.jpg" alt="portrait photo of person looking away from camera and stroking hair">
                                 </div>
-                                <div class="bottomCommentContentFlex">
+                                <div class="commentContent">
                                     <h4>Tuesday October 9th, 2019 by Sulaire</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil totam ipsam animi numquam ad aliquam ducimus iste officiis!</p>
                                 </div>
@@ -100,7 +115,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-    
+    <footer>
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
+
 </body>
 </html>
