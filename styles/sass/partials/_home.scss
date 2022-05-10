@@ -4,6 +4,7 @@
     background-image: url("../assets/home-image-1.jpg");
     background-size: cover;
     min-height: 85vh;
+    height: 400px;
     li {
         &:first-child {
             a {
@@ -213,6 +214,7 @@
 .backgroundImage {
     background-image: url("../assets/banner-image.jpg");
     min-height: 50vh;
+    height: 300px;
     background-size: cover;
 }
 

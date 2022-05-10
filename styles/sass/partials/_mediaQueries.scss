@@ -7,6 +7,7 @@
             position: static;
             width: auto;
             text-align: center;
+            margin-top:50px;
             span {
                 width: auto;
                 margin-left: -140px;
@@ -58,6 +59,7 @@
             }   
         }
     }
+
     .homeSectionOne {
         padding-top: 40px;
         min-height: 50vh;
@@ -150,7 +152,7 @@
     .mainTitle {
         h1 {
             font-size: 8rem !important;
-            margin: 50px !important;
+            margin: 60px !important;
             line-height: 7rem !important;
             span {
                 font-size: 2rem !important;
@@ -158,15 +160,16 @@
          }
         }
 
-
-    .homeHeader {
-        min-height: 50vh;
-    }
-
     .homeSectionOne {
         li {
             width: 90% !important;
             margin-left: 20px;
+        }
+        h3 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 2rem;
         }
     }
 

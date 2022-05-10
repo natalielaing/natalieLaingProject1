@@ -390,6 +390,7 @@ header h2 {
   background-image: url("../assets/home-image-1.jpg");
   background-size: cover;
   min-height: 85vh;
+  height: 400px;
 }
 .homeHeader li:first-child a {
   color: #FF8327;
@@ -602,6 +603,7 @@ header h2 {
 .backgroundImage {
   background-image: url("../assets/banner-image.jpg");
   min-height: 50vh;
+  height: 300px;
   background-size: cover;
 }
 
@@ -674,6 +676,7 @@ header h2 {
   background-image: url("../assets/contact-header-1.jpg");
   background-size: cover;
   min-height: 50vh;
+  height: 400px;
   background-position: bottom;
 }
 .contactHeader li:nth-child(5) a {
@@ -800,6 +803,7 @@ header h2 {
   background-image: url("../assets/blog-header-1.jpg");
   background-size: cover;
   min-height: 50vh;
+  height: 400px;
   background-position: bottom;
 }
 .blogHeader li:nth-child(4) a {
@@ -1028,6 +1032,7 @@ footer p {
     position: static;
     width: auto;
     text-align: center;
+    margin-top: 50px;
   }
   .mainTitle h1 span {
     width: auto;
@@ -1163,20 +1168,22 @@ footer p {
 
   .mainTitle h1 {
     font-size: 8rem !important;
-    margin: 50px !important;
+    margin: 60px !important;
     line-height: 7rem !important;
   }
   .mainTitle h1 span {
     font-size: 2rem !important;
   }
 
-  .homeHeader {
-    min-height: 50vh;
-  }
-
   .homeSectionOne li {
     width: 90% !important;
     margin-left: 20px;
+  }
+  .homeSectionOne h3 {
+    font-size: 2.5rem;
+  }
+  .homeSectionOne p {
+    font-size: 2rem;
   }
 
   .homeSectionTwo {
