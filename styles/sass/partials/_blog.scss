@@ -1,4 +1,4 @@
-//blog header styling 
+//BLOG HEADER STYLING 
 
 .blogHeader {
     background-image: url("../../assets/blog-header-1.jpg");
@@ -19,6 +19,8 @@
     }
 }
 
+//BLOG MAIN STYLING
+
 .blogMainSection {
     background-color: $quaternary;
 }
@@ -26,6 +28,8 @@
 .flexContainer {
     display: flex;
 }
+
+//SIDEBAR STYLING 
 
 .sidebar {
     background-color: $quinary;
@@ -77,7 +81,7 @@
     }
 }
 
-//blog main section 
+//BLOG MAIN POST STYLING
 
 .blogContent {
     position: relative;
@@ -114,7 +118,7 @@
     }
 }
 
-//comment section 
+//BLOG COMMENT SECTION STYLING 
 
 .commentSection {
     padding-left: 100px;
@@ -147,7 +151,7 @@
     margin-bottom: 100px;
 }
 
-//form styling 
+//BLOG COMMENT FORM STYLING
 
 .commentForm {
     background-color: $quaternary;
@@ -188,32 +192,6 @@
     .submitButton {
         text-align: center;
         margin-bottom: 80px;
-    }
-    
-    button {
-    display: inline-block;
-    width: 90%;
-    text-decoration: none;
-    border: none;
-    color: $primary;
-    background-color: $secondary;
-    font-family: $iconFont;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    font-weight: normal;
-    margin: 30px 0;
-    padding: 10px 25px;
-    line-height: 1.2rem;
-    text-align: center;
-    transition: 0.3s;
-    &:hover {
-        background-color: $tertiary;
-        color: $primary;
-    }
-    &:focus {
-        background-color: $tertiary;
-        color: $primary;
-    }
     }
   }
 

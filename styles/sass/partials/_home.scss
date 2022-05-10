@@ -1,5 +1,4 @@
-
-//Homepage Header Styling 
+//HOMEPAGE HEADER STYLING
 
 .homeHeader {
     background-image: url("../../assets/home-image-1.jpg");
@@ -48,7 +47,9 @@
     z-index: 1;
 }
 
-//Main Styling 
+//MAIN STYLING
+
+//SECTION ONE
 
 .homeSectionOne {
     background-color: $quaternary;
@@ -104,6 +105,8 @@
         }
     }
 }
+
+//SECTION TWO
 
 .homeSectionTwo {
     background-color: $quinary;
@@ -170,6 +173,8 @@
     width: 80%;
 }
 
+//SECTION THREE
+
 .homeSectionThree {
     background-color: $quaternary;
     min-height: 50vh;
@@ -203,11 +208,15 @@
     }
 }
 
+//MID-PAGE BACKGROUND IMAGE
+
 .backgroundImage {
     background-image: url("../../assets/banner-image.jpg");
     min-height: 50vh;
     background-size: cover;
 }
+
+//SECTION FOUR
 
 .homeSectionFour {
     min-height: 50vh;
@@ -245,6 +254,8 @@
         margin: auto 0;
     }
 }
+
+//SECTION FIVE
 
 .homeGallery {
     min-height: 50vh;

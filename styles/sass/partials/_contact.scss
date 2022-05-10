@@ -1,3 +1,5 @@
+//CONTACT HEADER STYLING 
+
 .contactHeader {
     background-image: url("../../assets/contact-header-1.jpg");
     background-size: cover;
@@ -17,6 +19,7 @@
     }
 }
 
+//ADDRESS & ICONS STYLING
 .contactSection {
     background-color: $quaternary;
     min-height: 65vh;
@@ -57,6 +60,8 @@
     }
 }
 
+//CONTACT PAGE FORM STYLING
+
 .contactPageForm {
     background-color: $quinary;
     box-shadow: 20px 20px $tertiary;
@@ -95,31 +100,31 @@
         text-align: center;
     }
     
-    button {
-    display: inline-block;
-    width: 90%;
-    text-decoration: none;
-    border: none;
-    color: $primary;
-    background-color: $secondary;
-    font-family: $iconFont;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    font-weight: normal;
-    margin: 30px 0;
-    padding: 10px 25px;
-    line-height: 1.2rem;
-    text-align: center;
-    transition: 0.3s;
-    &:hover {
-        background-color: $tertiary;
-        color: $primary;
-    }
-    &:focus {
-        background-color: $tertiary;
-        color: $primary;
-    }
-    }
+    // button {
+    // display: inline-block;
+    // width: 90%;
+    // text-decoration: none;
+    // border: none;
+    // color: $primary;
+    // background-color: $secondary;
+    // font-family: $iconFont;
+    // font-size: 1.5rem;
+    // letter-spacing: 2px;
+    // font-weight: normal;
+    // margin: 30px 0;
+    // padding: 10px 25px;
+    // line-height: 1.2rem;
+    // text-align: center;
+    // transition: 0.3s;
+    // &:hover {
+    //     background-color: $tertiary;
+    //     color: $primary;
+    // }
+    // &:focus {
+    //     background-color: $tertiary;
+    //     color: $primary;
+    // }
+    // }
   }
     
 
