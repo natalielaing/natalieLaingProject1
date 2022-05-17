@@ -233,9 +233,8 @@ html {
 .skip-link {
   position: absolute;
   left: -1000px;
-  top: 5px;
   z-index: 999;
-  background: white;
+  background: rgba(255, 255, 255, 0);
   color: black;
 }
 
@@ -354,6 +353,8 @@ header ul {
           justify-content: center;
   line-height: 1.5rem;
   letter-spacing: 1.9px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header ul li {
   padding: 30px;
@@ -375,8 +376,13 @@ header ul li:nth-child(4) {
 header ul li:nth-child(5) {
   margin-top: 5px;
 }
-header ul li:nth-child(6) {
-  display: none;
+header ul li:hover {
+  background-color: rgba(255, 255, 255, 0.404);
+  color: #FFFFFF;
+}
+header ul li:focus {
+  background-color: #FF8327;
+  color: #FFFFFF;
 }
 header h2 {
   margin: 0;
@@ -384,6 +390,10 @@ header h2 {
   font-size: 2.7rem;
   font-weight: normal;
   text-transform: capitalize;
+}
+
+.hamburger {
+  display: none;
 }
 
 .homeHeader {
@@ -1059,24 +1069,48 @@ footer p {
             flex-direction: column;
     padding: 0;
   }
-  header ul li:nth-child(1) {
-    display: none !important;
+
+  .homeHeader li:first-child a {
+    color: #FFFFFF;
   }
-  header ul li:nth-child(2) {
-    display: none !important;
+
+  .blogHeader li:nth-child(4) a {
+    color: #FFFFFF;
   }
-  header ul li:nth-child(4) {
-    display: none !important;
+
+  .contactHeader li:nth-child(5) a {
+    color: #FFFFFF;
   }
-  header ul li:nth-child(5) {
-    display: none !important;
-  }
-  header ul li:nth-child(6) {
+
+  .hamburger {
     display: block;
     color: #FFFFFF;
     font-size: 2rem;
     opacity: 0.5;
-    padding: 0 30px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+
+  .navList {
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: #FF8327;
+    list-style: none;
+  }
+
+  .showNav {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 
   .homeSectionOne {

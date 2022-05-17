@@ -15,25 +15,25 @@
     <header class="contactHeader">
         <div class="wrapper">
             <nav>
-                <ul>
-                    <li>
+                <ul class="navList">
+                    <li class="navItem">
                         <a href="./index.html">Home</a>
                     </li>
-                    <li>
+                    <li class="navItem">
                         <a href="#">About</a>
                     </li>
                     <li>
                         <a href="./index.html" class="logo"><h2>Bar-One</h2></a>
                     </li>
-                    <li>
+                    <li class="navItem">
                         <a href="./blog.html">Blog</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="fa-solid fa-bars" >
+                    <li class="navItem">
+                        <a href="./contact.html">Contact</a>
                     </li>
                 </ul>
+                <button class="hamburger"><i class="fa-solid fa-bars" id="hamburger">
+                </i></button>
             </nav>
 
             <h1>Get in Touch</h1>
@@ -78,7 +78,7 @@
                                 <textarea name="message" id="message" cols="50" rows="8" placeholder="Message"></textarea>
                             </div>
                 
-                            <div class="submitButton">
+                            <div class="submitButton" id="contactSubmit">
                                 <button>Submit</button>
                             </div>
                         </form>
@@ -91,6 +91,8 @@
     <footer>
         <p>Copyright © 2019 HackerYou</p>
     </footer>
+
+    <script src="./script.js"></script>
     
 </body>
 </html>

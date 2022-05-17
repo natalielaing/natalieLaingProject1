@@ -7,6 +7,7 @@ header {
         justify-content: center;
         line-height: 1.5rem;
         letter-spacing: 1.9px;
+        transition: 0.3s;
         li{
             padding: 30px;
             font-size: 1.7rem;
@@ -24,8 +25,13 @@ header {
             &:nth-child(5){
                 margin-top: 5px;
             }
-            &:nth-child(6){
-                display: none;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.404);
+                color: $primary;
+            }
+            &:focus {
+                background-color: $tertiary;
+                color: $primary;
             }
         }
     }
@@ -37,3 +43,7 @@ header {
         text-transform: capitalize;
     }
 } 
+
+.hamburger {
+    display: none;
+}

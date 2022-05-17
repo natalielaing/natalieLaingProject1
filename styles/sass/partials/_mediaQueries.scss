@@ -37,29 +37,61 @@
             justify-content: flex-start;
             flex-direction: column;
             padding: 0;
-            li{
-                &:nth-child(1){
-                    display:none !important;
-                }
-                &:nth-child(2){
-                    display:none !important;
-                }
-                &:nth-child(4){
-                    display:none !important;
-                }
-                &:nth-child(5){
-                    display:none !important;
-                }
-                &:nth-child(6){
-                    display: block;
-                    color: $primary;
-                    font-size: 2rem;
-                    opacity: .5;
-                    padding: 0 30px;
-                }
-            }   
         }
+        }
+    
+        .homeHeader {
+            li {
+                &:first-child {
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .blogHeader {
+            li {
+                &:nth-child(4) {
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .contactHeader {
+            li {
+                &:nth-child(5) {
+                    a {
+                        color: $primary;
+                        }
+                    }
+                }
+            }
+
+    .hamburger {
+            display: block;
+            color: $primary;
+            font-size: 2rem;
+            opacity: .5;
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0);
+            width: fit-content;
+            margin: 0;
+        }
+    .navList {
+            position: fixed;
+            transform: translateY(-100%);
+            top: 0;
+            left: 0;
+            z-index: 4;
+            background: $tertiary;
+            list-style: none;
+          }
+    .showNav {
+            transform: translateY(0);
+            transition: 1s;
     }
+
     .homeSectionOne {
         padding-top: 40px;
         min-height: 50vh;
